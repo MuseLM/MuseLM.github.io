@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="../css/skeleton.css">
+<link rel="stylesheet" href="../css/custom.css">
+<link rel="alternate" href="index.xml" type="application/rss+xml" title="Muzic">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+<title>MuseLM: Generating Symbolic Music from Text</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="https://schema.org/BlogPosting">
+            <h1 class="entry-title" itemprop="headline">MuseLM: Generating Symbolic Music from Text</h1>
+			
+			<section itemprop="entry-text">
+				
+<!-- <p>ArXiv: <a href="https://arxiv.org/abs/2012.05168">arXiv:2012.05168</a></p> -->
+<h2 id="abstract">Abstract</h2>
+
+<p>Generating music from text descriptions is a user-friendly mode since the text is a relatively easy interface for user engagement. While some approaches utilize texts to control music audio generation, editing musical elements in generated audio is challenging for users. In contrast, symbolic music offers ease of editing, making it more accessible for users to manipulate specific musical elements. In this paper, we propose MuseLM, which generates symbolic music from text descriptions with musical attributes as the bridge to break down the task into text-to-attribute understanding and attribute-to-music generation stages. The system has two main advantages: Firstly, it is data efficient. In the attribute-to-music generation stage, the attributes can be directly extracted from music sequences, making the model training self-supervised. In the text-to-attribute understanding stage, the text is synthesized and refined by ChatGPT based on the defined attribute templates. Secondly, the system can achieve precise control with specific attributes in text descriptions and offers multiple control options through attribute-conditioned or text-conditioned approaches. MuseLM outperforms baseline systems in terms of musicality, controllability, and overall score by at least 1.27, 1.08, and 1.32 respectively. Besides, there is a notable enhancement of about 20% in objective control accuracy.</p>
+
+<div style="text-align:center"><img src="./figures/framework.png" width=800 height=800>  
+    <p>Figure 1: The two-stage framework of MuseLM. Text-to-attribute understanding extracts diverse musical attributes, based on which symbolic music is generated through the attribute-to-music generation stage.</p>  
+</div>
+    
+
+<h2 id="baseline-samples">Comparison with Baselines</h2>
+
+<h2 id="baseline-samples">More Samples from MuseLM</h2>
+
+<h5>Sample 1</h5>
+<p>Text Description: </p>
+<p>Music is representative of the typical <b>pop</b> sound and spans <b>13 ~ 16 bars</b>, this is a song that has <b>a bright feeling from the beginning to the end</b>. Scenery: A beautiful, bright day with a clear blue sky. This song has a very <b>fast</b> and lively rhythm. The use of a specific pitch range of <b>4 octaves</b> creates a cohesive and unified sound throughout the musical piece.</p>
+
+<p>Generated Samples:</p>
+<audio controls="controls">
+    <source src="./samples/MuseLM/8/8_1.mp3" autoplay="">Your browser does not support the audio element.
+</audio>
+<audio controls="controls">
+    <source src="./samples/MuseLM/8/8_19.mp3" autoplay="">Your browser does not support the audio element.
+</audio>
+<audio controls="controls">
+    <source src="./samples/MuseLM/8/8_29.mp3" autoplay="">Your browser does not support the audio element.
+</audio>
+<p>Explanations: </p>
+<p>the generated music samples exhibit the characteristics of typical popular music. Each sample lasts approximately 16 bars and has distinct tempos of 114 BPM, 102 BPM, and 108 BPM respectively. The melodies span approximately 4 octaves, contributing to the overall range of the piece. Throughout the composition, a major chord progression is employed, creating a consistent and uplifting atmosphere from start to finish. This tonal choice effectively captures the essence of a beautiful, bright day accompanied by a clear blue sky, evoking a sense of positivity and joy.</p>
+
+<h2 id="baseline-samples">Comments from Musicians</h2>
+
+			</section>
+		</article>
+	</main>
+
+
+	
+
+</div>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-139981676-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+         HTML: ["input/TeX","output/HTML-CSS"],
+         TeX: {
+                Macros: {
+                         bm: ["\\boldsymbol{#1}", 1],
+                         argmax: ["\\mathop{\\rm arg\\,max}\\limits"],
+                         argmin: ["\\mathop{\\rm arg\\,min}\\limits"]},
+                extensions: ["AMSmath.js","AMSsymbols.js"],
+                equationNumbers: { autoNumber: "AMS" } },
+         extensions: ["tex2jax.js"],
+         jax: ["input/TeX","output/HTML-CSS"],
+         tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                    processEscapes: true },
+         "HTML-CSS": { availableFonts: ["TeX"],
+                       linebreaks: { automatic: true } }
+     });
+ </script>
+
+ <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       tex2jax: {
+         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+       }
+     });
+ </script>
+
+ <script type="text/javascript" async
+   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+ </script>
+
+
+
+
+</body>
+</html>
+
