@@ -813,7 +813,88 @@ This section demonstrates the model ability to handle differenet description len
     </div>
 </div>
 
+<h2 id="musiclm">Comparison with MusicLM</h2>
+<p>While MusicLM primarily focuses on generating musical audio from text descriptions, a distinct contrast to our work which involves generating symbolic music from similar textual cues, we find value in presenting comparative results with MusicLM. This allows us to effectively highlight the strengths and limitations of both approaches.</p>
 
+<div>
+    <h3>Comparison 1</h3>
+    <table width="100%" border="1">
+        <p><b>Text Descriptions:</b> 2/4 is the meter of the music and should feature grand piano. The music is composed of a dense and intricate arrangement of notes, resulting in a captivating and memorable experience with the choice of minor key. The song embodies the characteristics of classical style. 15 seconds is a relatively long time for a song, but the dynamic and diverse pitch range spanning 4 octaves makes the music an interesting and engaging listening experience.</p>
+        <table width="100%" border="1">
+            <tr>
+                <th width="50%" style="text-align: left" scope="col">MusicLM</th>
+                <th width="50%" style="text-align: left" scope="col">MuseLM</th>
+            </tr>
+            <tr>
+                <td width="50%" style="text-align: left">
+                    <audio controls="controls">
+                        <source src="./samples/MusicLM/1/MusicLM/AI_Test_Kitchen_24_is_the_meter_of_the_music_and_should_feat.mp3" autoplay="">Your browser does not support the audio element.
+                    </audio>
+                </td>
+                <td width="50%" style="text-align: left">
+                    <audio controls="controls">
+                        <source src="./samples/MusicLM/1/MuseLM/811_12.mp3" autoplay="">Your browser does not support the audio element.
+                    </audo>
+                </td>
+            </tr>
+        </table>
+        <p><b>Comments:</b></p>
+        <p></p>
+    </table>
+    <hr>
+    <h3>Comparison 2</h3>
+    <table width="100%" border="1">
+        <p><b>Text Descriptions:</b> Music is representative of the typical pop sound and spans 13 ~ 16 bars, this is a song that has a bright feeling from the beginning to the end. This song has a very fast and lively rhythm. The use of a specific pitch range of 3 octaves creates a cohesive and unified sound throughout the musical piece.</p>
+        <table width="100%" border="1">
+            <tr>
+                <th width="50%" style="text-align: left" scope="col">MusicLM</th>
+                <th width="50%" style="text-align: left" scope="col">MuseLM</th>
+            </tr>
+            <tr>
+                <td width="50%" style="text-align: left">
+                    <audio controls="controls">
+                        <source src="./samples/MusicLM/1/MusicLM/AI_Test_Kitchen_music_is_representative_of_the_typical_pop_so.mp3" autoplay="">Your browser does not support the audio element.
+                    </audio>
+                </td>
+                <td width="50%" style="text-align: left">
+                    <audio controls="controls">
+                        <source src="./samples/MusicLM/1/MuseLM/8_1.mp3" autoplay="">Your browser does not support the audio element.
+                    </audo>
+                </td>
+            </tr>
+        </table>
+        <p><b>Comments:</b></p>
+        <p></p>
+    </table>
+    <hr>
+</table>
+<hr>
+<h3>Comparison 3</h3>
+<table width="100%" border="1">
+    <p><b>Text Descriptions:</b> 3/4 is the time signature of the music. This song is unmistakably classical in style. This music is low-tempo. The use of piano is vital to the music.</p>
+    <table width="100%" border="1">
+        <tr>
+            <th width="50%" style="text-align: left" scope="col">MusicLM</th>
+            <th width="50%" style="text-align: left" scope="col">MuseLM</th>
+        </tr>
+        <tr>
+            <td width="50%" style="text-align: left">
+                <audio controls="controls">
+                    <source src="./samples/MusicLM/1/MusicLM/AI_Test_Kitchen_34_is_the_time_signature_of_the_music_this.mp3" autoplay="">Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td width="50%" style="text-align: left">
+                <audio controls="controls">
+                    <source src="./samples/MusicLM/1/MuseLM/22_18.mp3" autoplay="">Your browser does not support the audio element.
+                </audo>
+            </td>
+        </tr>
+    </table>
+    <p><b>Comments:</b></p>
+    <p></p>
+</table>
+<hr>
+</div>
 			</section>
 		</article>
 	</main>
