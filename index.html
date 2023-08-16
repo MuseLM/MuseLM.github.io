@@ -360,7 +360,7 @@ We test the generation diversity with the same text conditions.
     <h5>Sample 3</h5>
 
     <p>Text Description: </p>
-    <p>The flute creates a lively and upbeat atmosphere in this <b>fast-paced</b> song with just the right tempo, making it perfect for a tropical setting. The time signature of this song is <b>not usual</b>. The music is enriched by <b>oboe, trumpet, flute and tuba</b>.</p>
+    <p>The flute creates a lively and upbeat atmosphere in this <b>fast-paced</b> song with just the right tempo. The time signature of this song is <b>not usual</b>. The music is enriched by <b>oboe, trumpet, flute and tuba</b>.</p>
 
     <p>Generated Samples:</p>
     <audio controls="controls">
@@ -398,7 +398,7 @@ We test the generation diversity with the same text conditions.
     </audio>
 
     <p>Explanations: </p>
-    <p>In the generated samples, oboe, trumpet, flute, and tuba are utilized, with the flute playing a prominent role. The music features an uplifting melody, harmonies derived from major chords and their extensions, and a lively rhythm, all contributing to the tropical ambiance. Notably, the music deviates from the common-practice tradition by employing the unusual 2/2 time signature.</p>
+    <p>In the generated samples, oboe, trumpet, flute, and tuba are utilized, with the flute playing a prominent role. The music features an uplifting melody, harmonies derived from major chords and their extensions, and a lively rhythm. Notably, the music deviates from the common-practice tradition by employing the unusual 2/2 time signature.</p>
 
     <hr>
     <!-- Sample 4 -->
@@ -406,7 +406,7 @@ We test the generation diversity with the same text conditions.
     <h5>Sample 4</h5>
 
     <p>Text Description: </p>
-    <p>The song's upbeat melody and <b>swift</b> pace, paired with its <b>3 octave</b> pitch range and <b>3/4</b> time signature, offers a diverse and dynamic listening experience that suits a bustling cityscape. <b>Strings, drum, clarinet and flute</b> are utilized in the musical performance. The song's length is around about <b>14 bars</b>.</p>
+    <p>The song's upbeat melody and <b>swift</b> pace, paired with its <b>3 octave</b> pitch range and <b>3/4</b> time signature, offers a diverse and dynamic listening experience. <b>Strings, drum, clarinet and flute</b> are utilized in the musical performance. The song's length is around about <b>14 bars</b>.</p>
 
     <p>Generated Samples:</p>
     <audio controls="controls">
@@ -890,10 +890,36 @@ This section demonstrates the model ability to handle differenet description len
             </td>
         </tr>
     </table>
-    <p><b>Comments:</b></p>
-    <p></p>
+    <p><b>Comments:</b>the musicality of the samples from MusicLM is close to live performance. However, it features 4/4 in time signature instead of 3/4 described in texts. The genre is more like jazz rather than classical.</p>
 </table>
 <hr>
+
+<h3>Comparison 4</h3>
+<table width="100%" border="1">
+    <p><b>Text Descriptions:</b> The song's upbeat melody and swift pace, paired with its 3 octave pitch range and 3/4 time signature, offers a diverse and dynamic listening experience. Strings, drum, clarinet and flute are utilized in the musical performance. The song's length is around about 14 bars.</p>
+    <table width="100%" border="1">
+        <tr>
+            <th width="50%" style="text-align: left" scope="col">MusicLM</th>
+            <th width="50%" style="text-align: left" scope="col">MuseLM</th>
+        </tr>
+        <tr>
+            <td width="50%" style="text-align: left">
+                <audio controls="controls">
+                    <source src="./samples/MusicLM/4/MusicLM/AI_Test_Kitchen_the_songs_upbeat_melody_and_swift_pace_pair.mp3" autoplay="">Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td width="50%" style="text-align: left">
+                <audio controls="controls">
+                    <source src="./samples/MusicLM/4/MuseLM/143_20.mp3" autoplay="">Your browser does not support the audio element.
+                </audo>
+            </td>
+        </tr>
+    </table>
+    <p><b>Comments:</b>
+        The sample produced by MusicLM demonstrates commendable musicality, featuring a discernible yet somewhat subtle melody line. Notably, the time signature of the generated sample (4/4) differs from the provided description (also 3/4). Furthermore, it is noteworthy that the generated samples lack the presence of strings and flutes, elements explicitly outlined in the provided text.</p>
+</table>
+<hr>
+
 </div>
 			</section>
 		</article>
